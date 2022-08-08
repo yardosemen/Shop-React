@@ -95,7 +95,14 @@ function Shop() {
                 data.shop && setGoods(data.shop);
 
                 setLoading(false);
+                console.log(data);
             });
+        // .then((data) => {
+        //     data.shop.displayAssets && setGoods(data.shop.displayAssets);
+
+        //     setLoading(false);
+        //     console.log(data);
+        // });
 
         console.log();
     }, []);
