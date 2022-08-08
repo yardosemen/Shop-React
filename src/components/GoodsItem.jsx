@@ -3,14 +3,14 @@ function GoodsItem(props) {
         mainId,
         displayName,
         displayDescription,
-        // background,
-        url,
+        displayAssets,
+        // url,
         addToBasket = Function.prototype,
     } = props;
     return (
         <div className="card">
             <div className="card-image">
-                <img src={url} alt={displayName} />
+                <img src={displayAssets[0].url} alt={displayName} />
             </div>
             <div className="card-content">
                 <span className="card-title">{displayName}</span>
